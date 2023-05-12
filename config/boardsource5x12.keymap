@@ -67,13 +67,13 @@
         adjust_layer {
             // ------------------------------------------------------------------------------------------
             // |tog(4)|BT_SEL 1|BT_SEL 2|BT_SEL 3|  F5  |  F6  |  F7  |  F8  |BT_NXT|BT_CLR| PRTSN |    F12    |
-            // |tog(1)|  1     |  2     |  3     |  4   |  5   |  NA  |  NA  |  NA  |  NA  |  NA  |  NA   |LALT(PRTSN)|
+            // |to (0)|  1     |  2     |  3     |  4   |  5   |  NA  |  NA  |  NA  |  NA  |  NA  |  NA   |LALT(PRTSN)|
             // |      |  NA    |  NA    |  NA    |  NA  |  NA  |  NA  |  NA  |  NA  | Bri+ |  NA   |   PRTSN   |
             // |      | LGUI   |  NA    |  NA    |  NA  |BOOTLD|BOOTLD|  NA  |  NA  | Bri- |  NA   |LCTRL(DEL) |
             // |      |        |        |        |      |BOOTLD|BOOTLD|      |      |      |       |           |
             bindings = <
                 &tog 4 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &kp F5 &kp F6       &kp F7      &kp F8 &bt BT_NXT &bt BT_CLR     &kp PSCRN &kp F12
-                &tog 1 &kp N1       &kp N2       &kp N3       &kp N4 &kp N5       &none       &none  &none      &none          &none     &kp LA(PSCRN)
+                &to  0 &kp N1       &kp N2       &kp N3       &kp N4 &kp N5       &none       &none  &none      &none          &none     &kp LA(PSCRN)
                 &trans &none        &none        &none        &none  &none        &none       &none  &none      &kp C_BRI_UP   &none     &kp PSCRN
                 &trans &kp LGUI     &none        &none        &none  &bootloader  &bootloader &none  &none      &kp C_BRI_DN   &none     &kp LC(DEL)
                 &trans &trans       &trans       &trans       &trans &bootloader  &bootloader &trans &trans     &trans         &trans    &trans
@@ -84,13 +84,13 @@
             // ----------------------------------------------------------------------------------------------
             // |tog(4) |  F2    |   F3   |   F4   |   F5   |   F6   |  F7  |  F8  |  F9  | F10 | F11 |      |
             // |out tog|BT_SEL 0|BT_SEL 1|BT_SEL 2|BT_SEL 3|BT_SEL 4|BT_PRV|BT_NXT|BT_CLR|     |     |      |
-            // |tog(1) |        |        |        |        |        |      |      |      |     |     |      |
+            // |to (0)|        |        |        |        |        |      |      |      |     |     |      |
             // |       |        |        |        |        |        |      |      |      |     |     |      |
             // |       |        |        |        |        |        |      |      |      |     |     |      |
             bindings = <
                 &tog 4       &kp F2       &kp F3       &kp F4       &kp F5       &kp F6       &kp F7     &kp F8     &kp F9     &kp F10 &kp F11 &trans
                 &out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_PRV &bt BT_NXT &bt BT_CLR &trans  &trans  &trans
-                &tog 1       &trans       &trans       &trans       &trans       &trans       &trans     &trans     &trans     &trans  &trans  &trans
+                &to 0        &trans       &trans       &trans       &trans       &trans       &trans     &trans     &trans     &trans  &trans  &trans
                 &trans       &trans       &trans       &trans       &trans       &trans       &trans     &trans     &trans     &trans  &trans  &trans
                 &trans       &trans       &trans       &trans       &trans       &trans       &trans     &trans     &trans     &trans  &trans  &trans
             >;
