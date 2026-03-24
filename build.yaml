@@ -13,9 +13,9 @@
 #
 ---
 include:
-  - board: nice_nano@2.0.0//zmk
+  - board: nice_nano//zmk
     shield: boardsource5x12
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: nice_nano//zmk@2
+  - board: nice_nano//zmk
     shield: boardsource5x12
